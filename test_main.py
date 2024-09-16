@@ -26,5 +26,5 @@ def test_category_init(category):
     assert category.name == "Electronics"
     assert category.description == "Electronic devices"
     assert len(category.products) == 2
-    assert category.categories_amnt == 1
-    assert category.products_amnt == 2
+    assert category.category_count == 1
+    assert category.product_count == 2

@@ -15,16 +15,16 @@ class Category:
     name: str
     description: str
     products: list
-    categories_amnt = 0
-    products_amnt = 0
+    category_count = 0
+    product_count = 0
 
     def __init__(self, name, description, products):
         self.name = name
         self.description = description
         self.products = products
 
-        Category.categories_amnt += 1
-        Category.products_amnt += len(products)
+        Category.category_count += 1
+        Category.product_count += len(products)
 
 
 if __name__ == "__main__":
@@ -34,5 +34,5 @@ if __name__ == "__main__":
     category1 = Category("Electronics", "Electronic devices", [product1, product2])
     category2 = Category("Furniture", "Home furniture", [])
 
-    print(f"categories amount: {Category.categories_amnt}")
-    print(f"products in categories: {Category.products_amnt}")
+    print(f"categories amount: {Category.category_count}")
+    print(f"products in categories: {Category.product_count}")
